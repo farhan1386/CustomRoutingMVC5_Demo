@@ -15,6 +15,7 @@ Attribute routing is introduced in MVC5. Attributes are being used to define the
 
 To enable attribute routing, call MapMvcAttributeRoutes during configuration.
 
+```
 public class RouteConfig
 {
     public static void RegisterRoutes(RouteCollection routes)
@@ -24,9 +25,11 @@ public class RouteConfig
         routes.MapMvcAttributeRoutes();
     }
 }
+```
 
 # You can also combine attribute routing with convention-based routing.
 
+```
 public static void RegisterRoutes(RouteCollection routes)
 {
     routes.IgnoreRoute(“{resource}.axd/{*pathInfo}”);
@@ -39,6 +42,7 @@ public static void RegisterRoutes(RouteCollection routes)
         defaults: new { controller = “Home”, action = “Index”, id = UrlParameter.Optional }
     );
 }
+```
 
 # The following table lists the constraints that are supported.
 
