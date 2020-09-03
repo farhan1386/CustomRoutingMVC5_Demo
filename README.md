@@ -65,4 +65,6 @@ public static void RegisterRoutes(RouteCollection routes)
 |range|Matches an integer within a range of values.|{x:range(10,50)}|
 |regex|	Matches a regular expression.|{x:regex(^\d{3}-\d{3}-\d{4}$)}|
 
+# What is Route Prefix?
 
+Route prefix are associated with routes by design in attribute routing.It is used to set a common prefix for an entire controller.
